@@ -1,16 +1,20 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutricionista Guilherme Nascimento</title>
-    <meta name="description" content="Nutricionista Guilherme Nascimento - Atendimento humanizado e planos adaptados à sua rotina.">
-    <!-- Substitua YOUR_API_KEY pela sua chave da API do Google Cloud -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" async defer></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutricionista Guilherme Nascimento</title>
+  <meta name="description"
+    content="Nutricionista Guilherme Nascimento - Atendimento humanizado e planos adaptados à sua rotina.">
+  <!-- Substitua o valor de VITE_GOOGLE_MAPS_API_KEY no seu arquivo .env ou no painel da Vercel -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=%VITE_GOOGLE_MAPS_API_KEY%&libraries=places" async defer></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
