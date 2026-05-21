@@ -1,0 +1,78 @@
+.section {
+  padding: var(--spacing-section) var(--spacing-xl);
+}
+
+.bgSurface {
+  background-color: var(--surface-soft);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-section);
+}
+
+.sectionHeader h2 {
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.gridReviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .gridReviews {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.customerTestimonialCard {
+  background-color: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: var(--rounded-lg);
+  padding: var(--spacing-xxl);
+  display: flex;
+  flex-direction: column;
+}
+
+.customerTestimonialCard p {
+  font-size: 16px;
+  flex-grow: 1;
+  margin-bottom: var(--spacing-lg);
+  font-style: italic;
+  color: var(--slate);
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+}
+
+.reviewerAvatar {
+  width: 40px;
+  height: 40px;
+  background-color: var(--brand-teal-deep);
+  color: var(--on-dark);
+  border-radius: var(--rounded-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-right: var(--spacing-md);
+}
+
+.reviewerInfo h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.reviewerInfo span {
+  font-size: 13px;
+  color: var(--steel);
+}
