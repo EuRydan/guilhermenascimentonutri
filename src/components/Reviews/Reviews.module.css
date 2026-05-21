@@ -76,3 +76,40 @@
   font-size: 13px;
   color: var(--steel);
 }
+
+.reviewerAvatarImg {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--rounded-full);
+  margin-right: var(--spacing-md);
+  object-fit: cover;
+}
+
+.ratingStars {
+  margin-bottom: var(--spacing-sm);
+}
+
+.starFilled {
+  color: #fbbf24;
+  font-size: 18px;
+}
+
+.starEmpty {
+  color: var(--hairline-strong);
+  font-size: 18px;
+}
+
+.skeletonCard {
+  background-color: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: var(--rounded-lg);
+  padding: var(--spacing-xxl);
+  min-height: 200px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 0.2; }
+  100% { opacity: 0.6; }
+}
