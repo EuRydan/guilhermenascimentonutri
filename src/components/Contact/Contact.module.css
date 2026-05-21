@@ -2,17 +2,26 @@
   padding: var(--spacing-section) var(--spacing-xl);
 }
 
-.contactGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-xl);
-  max-width: 1000px;
+.contactContainer {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+.contactItemsWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
 @media (min-width: 768px) {
-  .contactGrid {
-    grid-template-columns: 1fr 1fr;
+  .contactItemsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contactItemsWrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
