@@ -1,8 +1,16 @@
+.heroWrapper {
+  padding: 0 var(--spacing-xl);
+  margin-top: var(--spacing-md);
+}
+
 .heroBandDark {
   background-color: var(--brand-teal-deep);
   color: var(--on-dark);
   padding: var(--spacing-hero) var(--spacing-xl);
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: var(--rounded-xl);
 }
 
 .title {
