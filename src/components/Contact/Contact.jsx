@@ -58,7 +58,7 @@ export function Contact() {
         </div>
       </div>
       
-      <div className={styles.mapSection} style={{ marginTop: '40px' }}>
+      <div className={`${styles.contactContainer} ${styles.mapSection}`} style={{ marginTop: '40px' }}>
         <MapLocation 
           latitude={-26.9022977} 
           longitude={-49.1339496} 
