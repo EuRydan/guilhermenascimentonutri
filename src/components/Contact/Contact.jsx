@@ -1,4 +1,5 @@
 import styles from './Contact.module.css';
+import { MapLocation } from '../MapLocation/MapLocation';
 
 export function Contact() {
   return (
@@ -53,6 +54,15 @@ export function Contact() {
           </div>
 
         </div>
+      </div>
+      
+      <div className={styles.mapSection} style={{ marginTop: '40px' }}>
+        <MapLocation 
+          latitude={-26.9022977} 
+          longitude={-49.1339496} 
+          popupTitle="Nutricionista Guilherme"
+          popupSubtitle="R. Gen. Osório, 4716 - Salto Weissbach"
+        />
       </div>
     </section>
   );
